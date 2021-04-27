@@ -7,19 +7,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/iconsfont.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__left header__disp">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="img/Logo.svg" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <form class="header__form">
+                            <input class="search__input" type="text" placeholder="Искать здесь...">
+                            <button class="search__button icon-search" type="submit"></button>
+                        </form>
+                    </div>
+                </div>
+                <nav class="header__right header__disp">
+                    <div class="header__wrapper">
+                        <div class="main__menu">
+                            <span class="burger__line burger__line-1"></span>
+                            <span class="burger__line burger__line-2"></span>
+                            <span class="burger__line burger__line-3"></span>
+                            <span class="burger__line burger__line-4"></span>
+                        </div>
+                        <div class="menu__list">
+                            <h2 class="menu__title">MENU</h2>
+                            <a class="title__menu" href="#">MAN</a>
+                            <ul>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Bags</a></li>
+                                <li><a href="#">Denim</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                            </ul>
+                            <a class="title__menu" href="#">WOMAN</a>
+                            <ul>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Jackets & Coats</a></li>
+                                <li><a href="#">Polos</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                            </ul>
+                            <a class="title__menu" href="#">KIDS</a>
+                            <ul>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Jackets & Coats</a></li>
+                                <li><a href="#">Polos</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Bags</a></li>
+                            </ul>
+                        </div>
 
+                    </div>
+                    <a class="menu__profile" href="#">
+                        <img src="img/profile.svg" alt="profile">
+                    </a>
+                    <a class="menu__bascet" href="#">
+                        <img src="img/basket.svg" alt="basket">
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 

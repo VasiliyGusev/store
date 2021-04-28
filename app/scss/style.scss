@@ -290,6 +290,7 @@ ul{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 70px 581px 581px 70px;
         grid-gap: 30px;
+        margin-bottom: 80px;
     }
     &__item{
         &-top{
@@ -313,6 +314,18 @@ ul{
         }
         &-button{
             grid-column: 1/4;
+            text-align: center;
+            & a{
+                display: inline-block;
+                padding: 14px 38px;
+                border: 1px solid #ccc;
+                transition: .3s cubic-bezier(.38,.01,.62,1);
+                &:hover{
+                    color: #fff;
+                    background-color: $mainColor;
+                    border: 1px solid transparent;
+                }
+            }
         }
     }
 }

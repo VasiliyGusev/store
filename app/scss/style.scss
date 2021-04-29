@@ -202,30 +202,35 @@ ul{
     &__title{
         margin-top: 280px;
         padding-left: 28px;
-        position: relative;
+        // position: relative;
+        display: inline-block;
         & h1{
+            position: relative;
             font-size: 40px;
             line-height: 45px;
             font-weight: 900;
+            display: inline-block;
             color: #222;
+            &::before{
+                content: '';
+                position: absolute;
+                display: block;
+                width: 6%;
+                height: 80px;
+                background-color:$mainColor;
+                // top: -5px;
+                left: -20px;
+            }
         }
         & p{
             font-size: 30px;
+            display: inline-block;
             line-height: 36px;
             font-weight: 700;
             color: #222;
             & span{
                 color: $mainColor;
             }
-        }
-        &::before{
-            content: '';
-            position: absolute;
-            width: 12px;
-            height: 80px;
-            background-color:$mainColor;
-            top: -5;
-            left: 0;
         }
     }
 }
@@ -608,7 +613,7 @@ ul{
         padding-left: 50px;
     }
     .banner__title{
-        margin-top: 138px;
+        margin-top: 120px;
         & h1{
             font-size: 44px;
             line-height: 52px;
@@ -690,5 +695,137 @@ ul{
             margin-bottom: 140px;
         }
     }
+    .conditions__product-cont img{
+        margin-top: 34px;
+    }
     
+}
+
+@media screen and (max-width: 720px) {
+    .banner__inner{
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px;
+        text-align: center;
+    }
+    .banner__img{
+        display: none;
+    }
+    .banner__title{
+        margin-top: 120px;
+        & h1{
+            font-size: 38px;
+            line-height: 45px;
+            &::before{
+                content: '';
+                width: 5%;
+                height: 70px;
+                left: -30px;
+            }
+        }
+        & p{
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .header__form{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .menu__profile,
+    .menu__bascet{
+        display: none;
+    }
+    .main__menu{
+        margin-right: 16px;
+    }
+    .banner__title {
+        margin-top: 120px;
+    }
+    .discount__inner{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 247px) 111px;
+    }
+    .discount{
+        &__fo-women{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        &__fo-men{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        &__fo-kids{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        &__fo-accesories{
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+    }
+    .discount__text {
+        margin-top: 99px;
+    }
+    .discount__text-bottom {
+        margin-top: 35px;
+    }
+    .product{
+        margin-top: 48px;
+        &__inner{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 110px repeat(6, 1fr) 70px;
+            grid-gap: 1px;
+            // margin-bottom: 80px;
+        }
+        &__item{
+            &-top{
+                grid-column: 1/2;
+            }
+            &-2{
+                grid-area: 2/1/4/2;
+            }
+            &-3{
+                grid-area: 4/1/6/2;
+            }
+            &-4{
+                grid-area: 6/1/8/2;
+            }
+            &-5{
+                grid-area: 8/1/10/2;
+            }
+            &-6{
+                grid-area: 10/1/12/2;
+            }
+            &-7{
+                grid-area: 12/1/14/2;
+            }
+            &-button{
+                grid-column: 1/2;
+            }
+        }
+    }
+    .conditions__product-cont {
+        width: 100%;
+        & img{
+            margin-top: 34px;
+        }
+    }
+    .subscribe__author p {
+        width: 85%;
+    }
+    .subscribe__form {
+        width: 90%;
+    }
+    .footer__inner {
+        flex-direction: column-reverse;
+    }
+    .footer__copy {
+        margin-bottom: 9px;
+    }
 }
